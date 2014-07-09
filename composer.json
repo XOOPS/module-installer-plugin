@@ -1,0 +1,19 @@
+{
+    "name": "XOOPS/module-installer-plugin",
+    "description": "Install XOOPS modules using Composer",
+    "keywords": ["xoops", "installer"],
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {"Xoops\\Composer\\": "src/"}
+    },
+    "extra": {
+        "class": "Xoops\\Composer\\ModuleInstallerPlugin"
+    },
+    "require": {
+        "composer-plugin-api": "1.0.0"
+    },
+    "replace": {
+        "geekwright/module-installer-plugin": "1.0.*"
+    }
+}
