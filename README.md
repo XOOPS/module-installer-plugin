@@ -5,7 +5,7 @@ module-installer-plugin
 
 This is a plugin for [Composer](http://getcomposer.org/) that allows XOOPS 2.6 modules to be managed by composer. Managing XOOPS modules with composer enables dependency management for modules, as modules can require other libraries, or even other modules.
 
-To use this plugin, your module should include a type property of **"xoops-module"** in its `composer.json`, and it should require **"XOOPS/module-installer-plugin"** as in the following example.
+To use this plugin, your module should include a type property of **"xoops-module"** in its `composer.json`, and it should require **"xoops/module-installer-plugin"** as in the following example.
 
 ```JSON
     {
@@ -13,7 +13,7 @@ To use this plugin, your module should include a type property of **"xoops-modul
         "type": "xoops-module",
         "description": "XOOPS dummy module for testing",
         "require": {
-            "XOOPS/module-installer-plugin": "~1.0"
+            "xoops/module-installer-plugin": "~1.0"
         }
     }
 ```
