@@ -17,7 +17,7 @@ class ModuleInstaller extends LibraryInstaller
      *
      * @return string install path relative to composer.json
      */
-    public function getPackageBasePath(PackageInterface $package)
+    public function getInstallPath(PackageInterface $package)
     {
         $moddir = explode('/', $package->getName());
 
@@ -25,7 +25,7 @@ class ModuleInstaller extends LibraryInstaller
 
         $extra = $this->composer->getPackage()->getExtra();
         if (isset($extra['xoops_modules_path'])) {
-            $xoops_root = $extra['xoops_modules_path'];
+            $xoops_modules = $extra['xoops_modules_path'];
         }
 
         return $xoops_modules . $moddir[1];
