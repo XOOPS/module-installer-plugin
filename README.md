@@ -24,7 +24,7 @@ The `composer.json` of the main xoops-library package needs to set the filesyste
 
 ```JSON
     "extra": {
-        "xoops_modules": "/home/user/htdocs/modules/"
+        "xoops_modules": "/home/user/htdocs/modules"
     }
 ```
 
