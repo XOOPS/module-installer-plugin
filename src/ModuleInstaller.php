@@ -21,14 +21,14 @@ class ModuleInstaller extends LibraryInstaller
     {
         $moddir = explode('/', $package->getName());
 
-        $xoops_modules = '../modules/';
+        $xoops_modules = './htdocs/modules';
 
         $extra = $this->composer->getPackage()->getExtra();
         if (isset($extra['xoops_modules_path'])) {
             $xoops_modules = $extra['xoops_modules_path'];
         }
 
-        return $xoops_modules . $moddir[1];
+        return $xoops_modules . '/' . $moddir[1];
     }
 
     /**
